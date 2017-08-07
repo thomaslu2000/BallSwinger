@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/HelpBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="corksproductions.ballswinger.HelpActivity">
+
+    <LinearLayout
+        android:id="@+id/Tut1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/SwingImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0.53"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/swing" />
+
+        <TextView
+            android:id="@+id/SwingText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:paddingLeft="8dp"
+            android:text="You play as the blue ball \n\nHold down anywhere on the screen to swing \n\nYou move faster when swinging"
+            android:textSize="18sp"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Tut2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/RedImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0.50"
+            android:scaleType="fitStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/red"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <TextView
+            android:id="@+id/RedText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.56"
+            android:text="This red stuff will chase you \n\nIf you fall in it, you lose \n\nAn exclamation point comes up when it gets close"
+            android:textSize="18sp"
+            tools:paddingLeft="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Tut3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/BumpImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.26"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/bumps" />
+
+        <TextView
+            android:id="@+id/BumpText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3.08"
+            android:text="\nIf you hit one of these, you will bounce off"
+            android:textSize="18sp"
+            tools:paddingLeft="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Tut4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/AtrepImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.49"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/atrep" />
+
+        <TextView
+            android:id="@+id/AtrepText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.59"
+            android:text="\nThere are also these big red round things \n\nSome of them will suck you in, \nOthers will push you out"
+            android:textSize="18sp"
+            tools:paddingLeft="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Tut5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/PowerUpImage"
+            android:layout_width="202dp"
+            android:layout_height="164dp"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/powerups" />
+
+        <TextView
+            android:id="@+id/PowerUpText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.95"
+            android:text="Collect these weird circles to get power ups \n\nGreen ones cancel gravity and let you go faster \n\nBlue ones let you go through things \n\nYellow ones double your speed"
+            android:textSize="18sp"
+            tools:paddingLeft="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Tut6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/SlowImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.39"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/slow" />
+
+        <TextView
+            android:id="@+id/SlowText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.63"
+            android:text="Press the slow button in the bottom left to slow down time"
+            android:textSize="24sp"
+            tools:paddingLeft="8dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
